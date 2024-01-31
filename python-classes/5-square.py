@@ -40,6 +40,6 @@ class Square:
             print()
         else:
             count = 1
-            while(count <= self.size):
+            while (count <= self.size):
                 print("#" * self.__size)
                 count += 1
