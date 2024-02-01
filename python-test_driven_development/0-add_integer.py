@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Add integer Class definition 
+Add integer Class definition
 """
 
 
