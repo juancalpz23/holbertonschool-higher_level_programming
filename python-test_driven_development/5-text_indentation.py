@@ -10,7 +10,7 @@ def text_indentation(text):
     after each of these characters: ., ? and :
     """
 
-    if type(text) is not str:
+    if isinstance(text, str):
         raise TypeError("text must be a string")
     i = 0
     txt_len = len(text)
