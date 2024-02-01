@@ -1,0 +1,32 @@
+def text_indentation(text):
+    """
+    Function prints a text with 2 new lines
+    after each of these characters: ., ? and :
+
+    Args:
+        text (str): The input text.
+
+    Raises:
+        TypeError: If text is not a string.
+
+    Example:
+        >>> text_indentation("This is a sentence. This is another sentence.")
+        This is a sentence.
+        
+        This is another sentence.
+
+        >>> text_indentation("A question? What's the answer.")
+        A question?
+        
+        What's the answer.
+
+        >>> text_indentation("Colon: explanation")
+        Colon:
+        
+        Explanation.
+
+        >>> text_indentation(123)
+        Traceback (most recent call last):
+            ...
+        TypeError: text must be a string
+    """
