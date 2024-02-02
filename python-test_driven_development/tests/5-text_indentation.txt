@@ -1,104 +1,92 @@
->>> print_square = __import__("4-print_square").print_square
+>>> text_indentation = __import__('5-text_indentation').text_indentation
 
->>> print_square(2)
-##
-##
+>>> text_indentation("""Lorem ipsum dolor sit amet, consectetur adipiscing elit. \
+... Quonam modo? Utrum igitur tibi litteram videor an totas paginas commovere? \
+... Non autem hoc: igitur ne illud quidem. Fortasse id optimum, sed ubi illud: \
+... Plus semper voluptatis? Teneo, inquit, finem illi videri nihil dolere.""")
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+<BLANKLINE>
+Quonam modo?
+<BLANKLINE>
+Utrum igitur tibi litteram videor an totas paginas commovere?
+<BLANKLINE>
+Non autem hoc:
+<BLANKLINE>
+igitur ne illud quidem.
+<BLANKLINE>
+Fortasse id optimum, sed ubi illud:
+<BLANKLINE>
+Plus semper voluptatis?
+<BLANKLINE>
+Teneo, inquit, finem illi videri nihil dolere.
+<BLANKLINE>
 
->>> print_square(0)
 
->>> print_square(4)
-####
-####
-####
-####
+>>> text_indentation(".?:")
+.
+<BLANKLINE>
+?
+<BLANKLINE>
+:
+<BLANKLINE>
 
->>> print_square(10)
-##########
-##########
-##########
-##########
-##########
-##########
-##########
-##########
-##########
-##########
+
+>>> text_indentation(":     ")
+:
+<BLANKLINE>
+
+
+>>> text_indentation("Abra Kadavra")
+Abra Kadavra
+
+>>> text_indentation("    Abra Kadavra")
+Avada Kedavra
+
+>>> text_indentation("          Alakazam!!!                 ")
+Obliviate!!!
+
+>>> text_indentation("          ?.?                ")
+?
+<BLANKLINE>
+.
+<BLANKLINE>
+?
+<BLANKLINE>
+
+>>> string = "B" + "O" * 3
+>>> text_indentation(string)
+BOOO
+
+>>> text_indentation("")
+
 
 """
 Error
 """
 
->>> print_square()
+>>> text_indentation()
 Traceback (most recent call last):
 ...
-TypeError: print_square() missing 1 required positional argument: 'size'
+TypeError: text_indentation() missing 1 required positional argument: 'text'
 
->>> print_square("420")
-Traceback (most recent call last):
-...
-TypeError: size must be an integer
 
->>> print_square(034, 420, 6990)
+>>> text_indentation("How", "..are", "you?")
 Traceback (most recent call last):
 ...
-TypeError: print_square() takes 1 positional argument but 3 were given
+TypeError: text_indentation() takes 1 positional argument but 3 were given
 
->>> print_square(None)
-Traceback (most recent call last):
-...
-TypeError: size must be an integer
 
->>> print_square(3.14)
+>>> text_indentation(420365)
 Traceback (most recent call last):
 ...
-TypeError: size must be an integer
+TypeError: text must be a string
 
->>> print_square(-777.77)
+>>> text_indentation(None)
 Traceback (most recent call last):
 ...
-TypeError: size must be an integer
+TypeError: text must be a string
 
->>> print_square(-67)
+>>> text_indentation(3.14)
 Traceback (most recent call last):
 ...
-ValueError: size must be >= 0
-
->>> print_square(2e8444)
-Traceback (most recent call last):
-...
-TypeError: size must be an integer
-
->>> print_square("square")
-Traceback (most recent call last):
-...
-TypeError: size must be an integer
-
->>> print_square((420, 69))
-Traceback (most recent call last):
-...
-TypeError: size must be an integer
-
->>> print_square([666, 777])
-Traceback (most recent call last):
-...
-TypeError: size must be an integer
-
->>> print_square({15, 25})
-Traceback (most recent call last):
-...
-TypeError: size must be an integer
-
->>> print_square({1:"Brown", 2:"Eyes"})
-Traceback (most recent call last):
-...
-TypeError: size must be an integer
-
->>> print_square(True)
-Traceback (most recent call last):
-...
-TypeError: size must be an integer
-
->>> print_square(False)
-Traceback (most recent call last):
-...
-TypeError: size must be an integer
+TypeError: text must be a string
