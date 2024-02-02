@@ -33,12 +33,12 @@ Traceback (most recent call last):
 ...
 TypeError: print_square() missing 1 required positional argument: 'size'
 
->>> print_square("420")
+>>> print_square("666")
 Traceback (most recent call last):
 ...
 TypeError: size must be an integer
 
->>> print_square(034, 420, 6990)
+>>> print_square(445, 334, 5445)
 Traceback (most recent call last):
 ...
 TypeError: print_square() takes 1 positional argument but 3 were given
@@ -48,22 +48,22 @@ Traceback (most recent call last):
 ...
 TypeError: size must be an integer
 
->>> print_square(3.14)
+>>> print_square(999.0)
 Traceback (most recent call last):
 ...
 TypeError: size must be an integer
 
->>> print_square(-777.77)
+>>> print_square(-999.0)
 Traceback (most recent call last):
 ...
 TypeError: size must be an integer
 
->>> print_square(-67)
+>>> print_square(-999)
 Traceback (most recent call last):
 ...
 ValueError: size must be >= 0
 
->>> print_square(2e8444)
+>>> print_square(2e8400)
 Traceback (most recent call last):
 ...
 TypeError: size must be an integer
@@ -73,22 +73,22 @@ Traceback (most recent call last):
 ...
 TypeError: size must be an integer
 
->>> print_square((420, 69))
+>>> print_square((44, 22))
 Traceback (most recent call last):
 ...
 TypeError: size must be an integer
 
->>> print_square([666, 777])
+>>> print_square([22, 22])
 Traceback (most recent call last):
 ...
 TypeError: size must be an integer
 
->>> print_square({15, 25})
+>>> print_square({21, 31})
 Traceback (most recent call last):
 ...
 TypeError: size must be an integer
 
->>> print_square({1:"Brown", 2:"Eyes"})
+>>> print_square({1:"Blue", 2:"Door"})
 Traceback (most recent call last):
 ...
 TypeError: size must be an integer
