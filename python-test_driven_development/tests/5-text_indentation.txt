@@ -36,13 +36,13 @@ Teneo, inquit, finem illi videri nihil dolere.
 <BLANKLINE>
 
 
->>> text_indentation("Abra Kadavra")
-Abra Kadavra
-
->>> text_indentation("    Abra Kadavra")
+>>> text_indentation("Avada Kedavra")
 Avada Kedavra
 
->>> text_indentation("          Alakazam!!!                 ")
+>>> text_indentation("    Avada Kedavra")
+Avada Kedavra
+
+>>> text_indentation("          Obliviate!!!                 ")
 Obliviate!!!
 
 >>> text_indentation("          ?.?                ")
