@@ -1,32 +1,104 @@
-def text_indentation(text):
-    """
-    Function prints a text with 2 new lines
-    after each of these characters: ., ? and :
+>>> print_square = __import__("4-print_square").print_square
 
-    Args:
-        text (str): The input text.
+>>> print_square(2)
+##
+##
 
-    Raises:
-        TypeError: If text is not a string.
+>>> print_square(0)
 
-    Example:
-        >>> text_indentation("This is a sentence. This is another sentence.")
-        This is a sentence.
-        
-        This is another sentence.
+>>> print_square(4)
+####
+####
+####
+####
 
-        >>> text_indentation("A question? What's the answer.")
-        A question?
-        
-        What's the answer.
+>>> print_square(10)
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
 
-        >>> text_indentation("Colon: explanation")
-        Colon:
-        
-        Explanation.
+"""
+Error
+"""
 
-        >>> text_indentation(123)
-        Traceback (most recent call last):
-            ...
-        TypeError: text must be a string
-    """
+>>> print_square()
+Traceback (most recent call last):
+...
+TypeError: print_square() missing 1 required positional argument: 'size'
+
+>>> print_square("420")
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+>>> print_square(034, 420, 6990)
+Traceback (most recent call last):
+...
+TypeError: print_square() takes 1 positional argument but 3 were given
+
+>>> print_square(None)
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+>>> print_square(3.14)
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+>>> print_square(-777.77)
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+>>> print_square(-67)
+Traceback (most recent call last):
+...
+ValueError: size must be >= 0
+
+>>> print_square(2e8444)
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+>>> print_square("square")
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+>>> print_square((420, 69))
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+>>> print_square([666, 777])
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+>>> print_square({15, 25})
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+>>> print_square({1:"Brown", 2:"Eyes"})
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+>>> print_square(True)
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+>>> print_square(False)
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
