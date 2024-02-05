@@ -69,7 +69,7 @@ class Rectangle:
         or o if empty string
         """
         if self.width == 0 or self.height == 0:
-            return 0
+            return ("")
         width = "#" * self.width
         for i in range(self.height - 1):
             rectangle += "\n" + width
