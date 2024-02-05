@@ -4,6 +4,9 @@ Define class rectangle
 """
 
 
-class Rectangle():
+class Rectangle:
+    """
+    Empty class
+    """
 
-    pass
+    rectangle = ()
