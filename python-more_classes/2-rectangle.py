@@ -28,9 +28,6 @@ class Rectangle:
             return 0
         return ((self.width + self.height) * 2)
 
-    @area.setter
-    def area(self, value):
-
     @property
     def width(self):
         """
