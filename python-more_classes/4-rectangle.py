@@ -53,7 +53,7 @@ class Rectangle:
         """
         Return to the rectangle area
         """
-        return (self.height * self.width)
+        return (self.width * self.height)
 
     def perimeter(self):
         """
@@ -80,4 +80,4 @@ class Rectangle:
         """
         Returns a string representation
         """
-        return ("Rectangle ({}, {})".format(self.width, self.height))
+        return ("Rectangle({}, {})".format(self.width, self.height))
