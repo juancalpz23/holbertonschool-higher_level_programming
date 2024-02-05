@@ -32,18 +32,18 @@ class Rectangle:
             raise ValueError("width must be >= 0")
         self.__width = value
         
-        def height(self):
-            """
-            Height getter
-            """
-            return self.__height
+    def height(self):
+        """
+        Height getter
+        """
+        return self.__height
         
-        def height(self, value):
-            """
-            Height setter
-            """
-            if not isinstance(value, int):
-                raise TypeError("height must be an integer")
-            if value < 0:
-                raise ValueError("height must be >= 0")
-            self.__height = value
+    def height(self, value):
+        """
+        Height setter
+        """
+        if not isinstance(value, int):
+            raise TypeError("height must be an integer")
+        if value < 0:
+            raise ValueError("height must be >= 0")
+        self.__height = value
