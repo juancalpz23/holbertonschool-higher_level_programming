@@ -7,7 +7,7 @@ Write a Class Rectangle the inherits from BaseGeometry
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
-class Rectangle():
+class Rectangle(BaseGeometry):
     """
     Class Rectangle the inherits from BaseGeometry with
     width and height
