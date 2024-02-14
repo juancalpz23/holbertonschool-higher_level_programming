@@ -1,10 +1,14 @@
 #!/usr/bin/python3
+"""
+Module containing the Base class
+"""
+
+
 class Base:
     """
     Class Base with private attribute
     """
     __nb_objects = 0
-
 
     def __init__(self, id=None):
         """
