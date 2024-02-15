@@ -102,7 +102,7 @@ class Rectangle(Base):
         if len(args) > 0:
             for i, argv in enumerate(args):
                 if i < _len:
-                    self.__setattr__(attr[1], argv)
+                    self.__setattr__(attr[i], argv)
         else:
             for k, v in kwargs.items():
                 self.__setattr__(k, v)
