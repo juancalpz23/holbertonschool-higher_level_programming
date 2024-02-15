@@ -73,8 +73,8 @@ class Base:
         """Returns a list of instances"""
         try:
             filename = cls.__name__ + ".json"
-            with open(filename, mode="r") as myfile:
-                read_file = filename.read()
+            with open(filename, mode="r") as fn:
+                read_file = fn.read()
                 list_dict = cls.from_json_string(read_file)
                 my_list = []
             for i in list_dict:
