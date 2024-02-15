@@ -75,8 +75,8 @@ class Base:
         em_list = []
         try:
             with open(filename, mode="r") as myfile:
-                _list = cls.from_json_string(myfile.read())
+                em_list = cls.from_json_string(myfile.read())
             for i, j in enumerate(em_list):
-                _list[i] = cls.create(**em_list[i])
+                em_list[i] = cls.create(**em_list[i])
         except FileNotFoundError:
             return em_list
