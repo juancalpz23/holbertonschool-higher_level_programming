@@ -73,11 +73,11 @@ class Base:
         """Returns a list of instances"""
         try:
             filename = cls.__name__ + ".json"
-            with open(filename, 'r') as f:
-                read_data = f.read()
-                list_dicti = cls.from_json_string(read_data)
+            with open(filename, 'r') as fn:
+                read_data = fn.read()
+                list_dict = cls.from_json_string(read_data)
                 my_list = []
-                for i_dict in list_dicti:
+                for i_dict in list_dict:
                     my_list.append(cls.create(**i_dict))
                 return my_list
         except FileNotFoundError:
