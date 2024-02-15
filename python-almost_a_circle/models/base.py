@@ -67,3 +67,16 @@ class Base:
         if cls.__name__ in ['Rectangle', 'Square']:
             dummy_inst.update(**dictionary)
             return dummy_inst
+
+    @classmethod
+    def load_from_file(cls):
+        """Returns a list of instances"""
+        filename = cls.__name__ + ".json"
+        em_list = []
+        try:
+            with open(filename, mode="r") as myfile:
+                _list = cls.from_json_string(myfile.read())
+            for i, j in enumerate(em_list):
+                _list[i] = cls.create(**em_list[i])
+        except FileNotFoundError:
+            return em_list
