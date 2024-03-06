@@ -1,1 +1,3 @@
-SQL Introduction
+# SQL Introduction
+
+This is an introduction to SQL
