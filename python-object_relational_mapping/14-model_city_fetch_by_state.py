@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-deletes all State objects with a name
-containing the letter a from the db hbtn_0e_6_usa
+Prints all City objects from the
+db hbtn_0e_14_usa
 Takes 3 args
 """
 from sys import argv
