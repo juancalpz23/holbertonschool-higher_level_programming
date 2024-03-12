@@ -4,6 +4,7 @@ List all states with a name starting with 'N'
 Should take 3 arguments username, passwd and db name
 """
 
+
 from sys import argv
 import MySQLdb
 
