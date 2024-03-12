@@ -20,6 +20,6 @@ if __name__ == "__main__":
     column = State(name="Louisiana")
     session.add(column)
     session.commit()
-    state = session.query(State).order_by(State.id.desc()).first()
+    state = (session.query(State).order_by(State.id.desc()).first())
     print(state.id)
     session.close()
