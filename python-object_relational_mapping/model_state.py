@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Python file containing the class 
+Python file containing the class
 Definition of State and declarative base
 """
 from sqlalchemy import Column, Integer, String
