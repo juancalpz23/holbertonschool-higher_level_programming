@@ -6,7 +6,7 @@ Takes 3 args
 """
 from sys import argv
 from model_state import Base, State
-from sqlalchemy import (create_engine)
+from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
 
@@ -20,7 +20,6 @@ if __name__ == "__main__":
     column = State(name="Louisiana")
     session.add(column)
     session.commit()
-    state = (session.query(State).order_by(State.id.desc).
-             first())
+    state = session.query(State).order_by(State.id.desc()).first()
     print(state.id)
     session.close()
