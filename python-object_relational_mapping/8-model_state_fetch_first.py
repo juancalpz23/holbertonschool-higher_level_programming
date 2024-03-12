@@ -11,8 +11,8 @@ from sqlalchemy.orm import sessionmaker
 
 if __name__ == "__main__":
 
-    engine = create_engine("mysql+mysqldb://{}:{}@localhost/{}".format(
-        argv[1], argv[2], argv[3]), pool_pre_ping=True)
+    engine = create_engine("mysql+mysqldb://{}:{}@localhost:3306/{}".format(
+        argv[1], argv[2], "hbtn_)e_6_usa"), pool_pre_ping=True)
     Base.metadata.create_all(engine)
 
     Session = sessionmaker(bind=engine)
@@ -23,4 +23,5 @@ if __name__ == "__main__":
         print("{}: {}".format(state.id, state.name))
     else:
         print("Nothing")
+
     session().close()
