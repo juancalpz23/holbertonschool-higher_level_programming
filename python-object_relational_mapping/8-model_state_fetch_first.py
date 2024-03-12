@@ -4,7 +4,7 @@ Prints the first state obj from the db
 hbtn_0e_0_usa, takes 3 args
 """
 from sys import argv
-from model_state import State, Base
+from model_state import Base, State
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
