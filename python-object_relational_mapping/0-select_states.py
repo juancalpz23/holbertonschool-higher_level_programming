@@ -3,6 +3,7 @@
 List all states from db hbtn_0e_usa
 Takes 3 args mysql username, mysql passwd, db name
 """
+
 from sys import argv
 import MySQLdb
 
